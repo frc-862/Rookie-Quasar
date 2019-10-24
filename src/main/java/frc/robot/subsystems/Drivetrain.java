@@ -31,7 +31,6 @@ public class Drivetrain extends SendableSubsystemBase {
     }
 
     public Drivetrain() {
-
         left1 = new CANSparkMax(RobotMap.left1CANDID, CANSparkMaxLowLevel.MotorType.kBrushless);
         left2 = new CANSparkMax(RobotMap.left2CANDID, CANSparkMaxLowLevel.MotorType.kBrushless);
         //left3 = new CANSparkMax(RobotMap.left3CANDID, CANSparkMaxLowLevel.MotorType.kBrushless);
@@ -52,7 +51,6 @@ public class Drivetrain extends SendableSubsystemBase {
         drive = new DifferentialDrive(left, right);
 
         withEachMotor((m) -> m.setOpenLoopRampRate(0.5));
-
         setDefaultCommand(new TankDrive(this));
 
     }
@@ -74,7 +72,8 @@ public class Drivetrain extends SendableSubsystemBase {
     public void setPower(double leftpwr, double rightpwr) {
         leftpwr *= Constants.POWER_REDUCTION;
         rightpwr *= Constants.POWER_REDUCTION;
-        drive.tankDrive(leftpwr, rightpwr, true);
+        drive.tankDrive(
+            leftpwr, rightpwr, true);
     }
 
     public void stop(){
