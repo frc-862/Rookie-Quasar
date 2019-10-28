@@ -2,3 +2,9 @@
 .vscode/
 
 .gradle/4.4.1/fileChanges/
+
+*.lock
+
+.gradle/4.4.1/fileHashes/
+
+.gradle/5.0/taskHistory/taskHistory.bin
