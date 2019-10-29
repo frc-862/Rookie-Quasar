@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ctre.phoenix:wpiapi-java:5.14.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ctre.phoenix/wpiapi-java/5.14.1/4ef853108d3c129f94fb250b303d77753cf70df4/wpiapi-java-5.14.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ctre.phoenix/wpiapi-java/5.14.1/d98b82d81a1e4fcaed3b2de8d339df404878863d/wpiapi-java-5.14.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
