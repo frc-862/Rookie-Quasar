@@ -12,3 +12,9 @@
 .gradle/5.0/fileHashes/
 
 build/debug/
+
+bin/main/frc/robot/Main.class
+
+bin/main/frc/robot/
+
+.settings/
