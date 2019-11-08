@@ -3,6 +3,7 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj.experimental.command.SendableCommandBase;
 import frc.robot.Robot;
 import frc.robot.subsystems.Drivetrain;
+import frc.robot.subsystems.Drivetrainr;
 
 public class TankDrive extends SendableCommandBase {
 
@@ -15,7 +16,10 @@ public class TankDrive extends SendableCommandBase {
     
   }
 
-  @Override
+  public TankDrive(Drivetrainr drivetrainr) {
+}
+
+@Override
   public void execute() {
 
     drivetrain.setPower(Robot.oi.getLeftThrottle(), Robot.oi.getRightThrottle());
